@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecting Leader Page</title>
+  </head>
+  <body>
+    <h2>Select a Leader</h2>
+    <form method="POST" action="submit_leader.php">
+      <label for="student_id">Student ID:</label><br />
+      <input
+        type="text"
+        id="student_id"
+        name="student_id"
+        required
+      /><br /><br />
+
+      <label>
+        <input type="radio" name="leader" value="juma" required />
+        Juma </label
+      ><br />
+
+      <label>
+        <input type="radio" name="leader" value="joseph" required />
+        Joseph </label
+      ><br /><br />
+
+      <button type="submit">Submit Leader</button>
+    </form>
+
+    <br />
+    <a href="results.php">View Results</a>
+  </body>
+</html>
